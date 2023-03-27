@@ -893,7 +893,7 @@ button {
 	fill: #f4f4fd;
 }
 
-.Social-title {
+.social-title {
 	font-family: "Roboto";
 	font-style: normal;
 	font-weight: 500px;
@@ -980,9 +980,16 @@ button {
 	}
 	.footer-form-submit {
 		margin-top: 16px;
+		margin-left: auto;
 	}
-	.subscribe-form {
+	.subscribe-form,
+	.logo-footer {
 		justify-content: center;
+	}
+
+	.footer-form-discription,
+	.social-title {
+		text-align: center;
 	}
 }
 
