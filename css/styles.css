@@ -64,27 +64,6 @@ button {
 	overflow: hidden;
 }
 
-/*
-
-.footer {
-	background: #2e2f42;
-	padding-top: 100px;
-	padding-bottom: 100px;
-	display: block;
-}
-.footer-discription {
-	color: #e7e9fc;
-	width: 264px;
-}
-
-/*.container {
-	width: 1158px;
-	margin-left: auto;
-	margin-right: auto;
-	padding-right: 15px;
-	padding-left: 15px;
-}*/
-
 .container {
 	padding-left: 15px;
 	padding-right: 15px;
@@ -509,7 +488,7 @@ button {
 	color: var(--secondary-title-color);
 }
 
-.card-list {
+.card-list-title {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 24px;
@@ -520,13 +499,17 @@ button {
 	.tumb {
 		display: none;
 	}
+	.card-list-title {
+		gap: 72px 24px;
+	}
 }
 
 @media screen and (min-width: 768px) {
 	.tumb {
 		display: none;
 	}
-	.card-list {
+	.card-list-title {
+		gap: 72px 24px;
 		justify-content: space-between;
 	}
 	.heading {
@@ -551,6 +534,10 @@ button {
 
 	.heading {
 		width: calc((100% - 72px) / 4);
+	}
+
+	.card-list-title {
+		gap: 24px;
 	}
 }
 
@@ -706,6 +693,42 @@ button {
 	fill: #f4f4fd;
 }
 
+.card-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+	justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+	.card-list {
+		gap: 72px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.card-list {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 64px 24px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.card-list {
+		gap: 24px;
+	}
+}
+
+/*============/<!--Section 3-->========*/
+
+/*============/--Section client-->========*/
+
+.section-client {
+	padding-top: 130px;
+}
+
 .client-list {
 	display: flex;
 	justify-content: center;
@@ -715,7 +738,6 @@ button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 168px;
 	height: 88px;
 	border: 1px solid #8e8f99;
 	border-radius: 4px;
@@ -733,46 +755,46 @@ button {
 	border-color: #404bbf;
 }
 
-.promo-title {
-	font-weight: 700;
-	font-size: 36px;
-	line-height: 1.11;
-	text-transform: capitalize;
-	color: var(--main-title-color);
-	margin-bottom: 72px;
-	text-align: center;
-}
-
 @media screen and (max-width: 767px) {
-	.card-list {
-		gap: 72px;
+	.client-list {
+		flex-wrap: wrap;
+		gap: 72px 16px;
+		justify-content: space-between;
+	}
+
+	.client-list-item {
+		width: calc((100% - 24px) / 2);
 	}
 }
 
 @media screen and (min-width: 768px) {
-	.card-list {
-		flex-direction: row;
+	.client-list {
 		flex-wrap: wrap;
 		justify-content: center;
-		gap: 64px;
+		gap: 72px 24px;
+	}
+
+	.client-list-item {
+		width: calc((100% - 48px) / 3);
 	}
 }
 
 @media screen and (min-width: 1200px) {
-	.card-list {
+	.client-list {
+		display: flex;
+		justify-content: center;
 		gap: 24px;
+	}
+
+	.client-list-item {
+		width: calc((100% - 120px) / 6);
 	}
 }
 
-/*.section-client {
-	padding-top: 130px;
-}*/
-
-/*============/<!--Section 3-->========*/
-
+/*============/<!----Section client-->========*/
 /*=================Filters===============*/
 
-/*.section-top {
+.section-top {
 	padding-top: 96px;
 }
 
@@ -816,14 +838,25 @@ button {
 
 /*=================/Footer===============*/
 
-/*.logo-white {
+.footer {
+	background: #2e2f42;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	display: block;
+}
+.footer-discription {
+	color: #e7e9fc;
+	width: 264px;
+}
+
+.logo-white {
 	color: #f4f4fd;
 }
 
 .logo-footer {
 	margin-bottom: 16px;
-}*/
-/*.footer-dislay {
+}
+.footer-dislay {
 	display: flex;
 	column-gap: 120px;
 }
@@ -935,10 +968,45 @@ button {
 	color: #ffffff;
 }
 
+@media screen and (max-width: 767px) {
+	.footer-dislay {
+		flex-wrap: wrap;
+		gap: 72px;
+		justify-content: center;
+	}
+
+	.footer-form {
+		display: block;
+	}
+	.footer-form-submit {
+		margin-top: 16px;
+	}
+	.subscribe-form {
+		justify-content: center;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.footer-dislay {
+		flex-wrap: wrap;
+		gap: 72px;
+		column-gap: 24px;
+		justify-content: center;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.footer-dislay {
+		flex-direction: row;
+		gap: 120px;
+		min-width: 1200px;
+	}
+}
+
 /*=================/<Footer===============*/
 
 /*=================<modal window===============*/
-/*.backdrop {
+.backdrop {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -964,7 +1032,7 @@ button {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
 	padding: 72px 24px 24px 24px;
-}*/
+}
 .close-btn {
 	position: absolute;
 	right: 19px;
@@ -991,14 +1059,14 @@ button {
 	fill: #ffffff;
 }
 
-/*.modal-close-btn {
+.modal-close-btn {
 	transition: fill var(--transition-dur-and-fun);
 }
 
 /*=================/<modal window===============*/
 
 /*=================<modal form===============*/
-/*.modal-form {
+.modal-form {
 	display: flex;
 	flex-direction: column;
 }
