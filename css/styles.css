@@ -375,12 +375,12 @@ button {
 }
 
 .hero-title {
+	width: 100%;
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.11;
 	color: #ffffff;
 	margin-bottom: 40px;
-	width: 320px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -574,7 +574,7 @@ button {
 	}
 }
 
-/*.img-list {
+.img-list {
 	display: flex;
 	flex-wrap: wrap;
 	column-gap: 24px;
@@ -628,11 +628,6 @@ button {
 	gap: 24px;
 	margin-bottom: 72px;
 }
-
-
-/*====/Top Line====*/
-
-/*============/<!--Section 3-->========*/
 
 /*============<!--Section 3-->========*/
 .person-title {
@@ -1033,12 +1028,12 @@ button {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 408px;
+	width: 392px;
 	height: 585px;
 	background-color: #fcfcfc;
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
-	padding: 72px 24px 24px 24px;
+	padding: 72px 16px 24px 16px;
 }
 .close-btn {
 	position: absolute;
@@ -1068,6 +1063,13 @@ button {
 
 .modal-close-btn {
 	transition: fill var(--transition-dur-and-fun);
+}
+
+@media screen and (min-width: 768px) {
+	.modal-content {
+		width: 408px;
+		padding: 72px 24px 24px 24px;
+	}
 }
 
 /*=================/<modal window===============*/
