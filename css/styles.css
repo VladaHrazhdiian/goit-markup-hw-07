@@ -486,6 +486,7 @@ button {
 
 .section-discription {
 	color: var(--secondary-title-color);
+	font-weight: 500;
 }
 
 .card-list-title {
@@ -542,6 +543,10 @@ button {
 
 	.card-list-title {
 		gap: 24px;
+	}
+
+	.section-discription {
+		font-weight: 400;
 	}
 }
 
@@ -764,6 +769,7 @@ button {
 
 	.client-list-item {
 		flex-basis: calc((100% - 24px) / 2);
+		width: 190px;
 	}
 }
 
@@ -776,6 +782,7 @@ button {
 
 	.client-list-item {
 		flex-basis: calc((100% - 48px) / 3);
+		width: 168px;
 	}
 }
 
@@ -977,12 +984,10 @@ button {
 
 	.footer-form {
 		flex-wrap: wrap;
-		width: 100%;
 	}
 
 	.footer-form-input {
-		max-width: 398px;
-		width: 100%;
+		width: 398px;
 	}
 
 	.footer-form-submit {
