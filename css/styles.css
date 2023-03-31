@@ -768,7 +768,6 @@ button {
 	}
 
 	.client-list-item {
-		flex-basis: calc((100% - 24px) / 2);
 		width: 190px;
 	}
 }
@@ -781,7 +780,6 @@ button {
 	}
 
 	.client-list-item {
-		flex-basis: calc((100% - 48px) / 3);
 		width: 168px;
 	}
 }
